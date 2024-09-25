@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pgeocode
-from decimal import Decimal
+from decimal import Decimal, InvalidOperation
 
 # Function to scrape tax rates data from the CDTFA page
 def scrape_tax_rates():
@@ -110,9 +110,10 @@ def validate_zip_code(zip_code):
 # Function to validate the monthly payment input
 def validate_monthly_payment(payment):
     try:
+        # Convert the input to Decimal
         payment = Decimal(payment)
         return payment > 0
-    except ValueError:
+    except (InvalidOperation, ValueError):
         return False
 
 # Main function
