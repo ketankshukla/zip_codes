@@ -3,6 +3,8 @@ Tax Rate Lookup and Remittance Calculator
 
 This Python program allows users to enter a ZIP code and a monthly payment amount to calculate sales tax remittance amounts for California locations. It fetches tax rates from the California Department of Tax and Fee Administration (CDTFA) website and uses the `pgeocode` library to map ZIP codes to cities and counties. The program then calculates the applicable state, county, and city tax rates and displays the total remittance amount.
 
+### The final code is in the file ```final.py```
+
 Features
 --------
 
