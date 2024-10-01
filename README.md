@@ -132,7 +132,7 @@ Installation
 2.  Run the program:
 
     ```bash
-    python your_program.py
+    python final.py
     ```
 
 
